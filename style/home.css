@@ -1,0 +1,97 @@
+.header {
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    align-items: flex-end;
+}
+
+.header > .title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 1100px;
+}
+
+.title > span {
+    width: 400px;
+    height: 2px;
+    background: #f24527;
+    display: block;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 2.5em;
+}
+
+.white-space {
+    height: 15px;
+}
+
+.white-space2 {
+    height: 64px;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+}
+
+.visual {
+    width: 40%;
+    height: auto;
+}
+
+.description {
+    padding-left: 20px;
+}
+
+.description > h2 {
+    font-size: 2em;
+    font-weight: 600px;
+}
+
+.description > span {
+    height: 2px;
+    width: 50px;
+    background: #f24527;
+    display: block;
+}
+
+.description > p {
+    font-size: 1.3em;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    width: 190px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 20px;
+    font-size: 1.3rem;
+    position: relative;
+    color: black;
+}
+
+.btn::after, .btn::before{
+    border: 3px solid #f24527;
+    content: "";
+    position: absolute;
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    left: 0;
+    bottom: 0;
+    transition: transform 0.3 ease;
+}
+
+.btn:hover::after {
+    transform: translate(-5px, -5px);
+}
+
+.btn:hover::before {
+    transform: translate(5px, 5px);
+}

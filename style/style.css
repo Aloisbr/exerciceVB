@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Benne&family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Merriweather:wght@700&family=Nanum+Gothic&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+h1, h2 {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+#sidebar {
+    position: absolute;
+    width: 300px;
+    height: 100%;
+    background: #000;
+    left: -300px;
+    transition: .4s;
+}
+
+#sidebar ul li {
+    list-style: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 26px 24px;
+    cursor: pointer;
+}
+
+#sidebar ul li:hover {
+    color: #f24527;
+}
+
+#sidebar .toggle-btn {
+    position: absolute;
+    top: 30px;
+    left: 330px;
+}
+
+.toggle-btn span {
+    width: 45px;
+    height: 4px;
+    background: #f24527;
+    display: block;
+    margin-top: 4px;
+}
+
+#sidebar.active {
+    left: 0;
+}
